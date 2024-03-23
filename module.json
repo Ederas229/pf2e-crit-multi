@@ -1,13 +1,13 @@
 {
-  "id": "module",
-  "title": "New Module",
+  "id": "pf2e-crit-multi",
+  "title": "PF2e Crit Multi",
   "description": "",
   "version": "#{VERSION}#",
   "library": "false",
   "manifestPlusVersion": "1.2.0",
   "compatibility": {
-    "minimum": 10,
-    "verified": 10,
+    "minimum": 11,
+    "verified": 11,
     "maximum": 11
   },
   "authors": [
@@ -18,8 +18,12 @@
     }
   ],
   "relationships": {
-    "systems": [],
-    "requires": []
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system"
+      }
+    ]
   },
   "esmodules": [
     "scripts/module.js"
