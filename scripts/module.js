@@ -1,7 +1,7 @@
 let waitingRoll = false;
 
 Hooks.on("renderChatMessage", async function (message, html) {
-  if (message.isCheckRoll) {
+  if (message.getFlag("pf2e", "context.type") === "attack-roll") {
     html
       .find(".message-buttons")
       .append(
