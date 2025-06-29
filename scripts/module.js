@@ -44,7 +44,6 @@ async function changeMulti(message) {
     (Roll) => Roll.name === "DamageRoll"
   );
 
-  ui.chat.element.find(message.id).remove();
   ChatMessage.deleteDocuments([message.id]);
   const roll = new DamageRoll(
     message.rolls[0]._formula.replaceAll("2 *", "3 *")
